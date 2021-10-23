@@ -1,0 +1,301 @@
+/* style.css */
+:root {
+    --main-color: #31a9e0;
+    --text-color: #333;
+    --footer-bg-color: #e2e2e2;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  ul {
+    list-style-type: none;
+  }
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+
+  }
+  #main-header{
+      height: 80px;
+  }
+  .header-box{
+      display: flex;
+  }
+  #main-header img{
+    width: 90px;
+    height: 70px;
+    margin-top: 5px;
+  }
+  .nav{
+      display: flex;
+      margin-left: auto;
+      margin-right: 35px;
+      margin-top: 27px;
+      font-size: 20px;
+  }
+  .nav li{
+    margin-right: 45px;
+  }
+  #main-header input{
+      margin-top: 24px;
+      width: 178px;
+      height: 32px;
+  }
+  #main-header button{
+    margin-top: 24px;
+    width: 45px;
+    font-size: 14px;
+    height: 32px;
+    background: #A19D9D;
+    border: 1px solid #707070;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+
+  /* 메인비쥬얼 */
+
+  #main-visual{
+    position: relative;
+  }
+  .slider{
+    position: absolute;
+    width: 1920px;
+    height: 720px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slider-text{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 10;
+      text-align: center;
+  }
+  .slider-text h2{
+    font-size: 60px;
+    color: #0073a8;
+    margin-bottom: 31px;
+  }
+  .slider-text button{
+    width: 292px;
+    height: 52px;
+    text-align: center;
+    border: none;
+    background: #31a9e0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .slider img{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  /*pager*/
+  .pager{
+    position: relative;
+    width: 1920px;
+    height: 720px;
+    margin: 0 auto;
+  }
+  .leftBtn img, .rightBtn img{
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .leftBtn img{
+    left: -200px;
+  }
+  .rightBtn img{
+    left: 1300px;
+  }
+  
+  /*recommend*/
+
+#recommend h2{
+      text-align: center;
+      margin-top: 100px ;
+      font-size: 30px;
+      color: var(--main-color);
+      font-weight: 700;
+      margin-bottom: 35px;
+  }
+  .recommend-box{
+    color: var(--text-color);
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .recommend-first{
+      width: 572px;
+      height: 250px;
+      display: flex;
+      margin-right: 20px;
+  }
+  .recommend-first:hover{
+      box-shadow: rgb(143, 143, 143) 1px 1px 6px;
+  }
+  .recommend-first:last-child{
+        margin: 0;
+  }
+  .recommend-img{
+    background-image: url(./images/recommend-img-1.jpg);
+    width: 294px;
+    height: 250px;
+  }
+  .recommend-img2{
+    background-image: url(./images/recommend-img-2.jpg);
+    width: 294px;
+    height: 250px;
+  }
+  .recommend-img3{
+    background-image: url(./images/recommend-img-3.jpg);
+    width: 294px;
+    height: 250px;
+  }
+  .recommend-img4{
+    background-image: url(./images/recommend-img-4.jpg);
+    width: 294px;
+    height: 250px;
+  }
+  .recommend-text{
+      text-align: center;
+      margin: 0 auto;
+  }
+  
+  .recommend-text h3{
+    padding-top: 73px;
+  }
+  
+  .recommend-text h4{
+      padding-top: 20px;
+  }
+  .recommend-text p{
+      padding-top: 15px;
+  }
+/* 프로모션 */
+  #promotion{
+      color: var(--text-color);
+      height: 610px;
+      width: 1920px;
+      background-color: #E2E2E2;
+      margin: 0 auto;
+      margin-top: 80px;
+      background: url(./images/promotion-bg.jpg);
+  }
+  #promotion h2{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+  }
+  .promotion-box{
+      display: flex;
+
+  }
+    .promotion-img{
+        width: 572px;
+        height: 335px;
+        background-image: url(./images/promotion-1.jpg);
+        background-size: cover;
+    }
+    .promotion-text{
+        margin-left: 56px;
+        margin-top: 100px;
+    }
+    .promotion-text h3{
+        margin-bottom: 13px;
+        font-size: 24px;
+    }
+    .promotion-text p{
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    .promotion-text button{
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+
+    /* 문의 */
+    .notice-box{
+        display: flex;
+        color: rgb(143, 143, 143);
+        justify-content: space-between;
+        margin-top: 38px;
+        padding-bottom: 37px;
+    }
+    .number, .Closed, .question{
+        display: inline-block;
+    }
+    .number h3{
+        font-size: 18px;
+    }
+    .number p{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .Closed p:first-child{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .Closed p:last-child{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .question p:first-child{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .question p:last-child{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    /* footer */
+    #footer-main{
+        width: 1920px;
+        height: 125px;
+        color: rgb(143, 143, 143);
+        margin: 0 auto;
+    }
+    footer{
+        background: #D8D8D8;
+    }
+    .footer-ul{
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-ul li a{
+        color: rgb(143, 143, 143);
+        padding: 0 5px;
+        border-right: 1px solid #ccc;
+    }
+    .footer-ul li:last-child{
+        border-right: none;
+        padding-right: 0;
+    }
+    .footer-ul li:first-child{
+        border-right: none;
+        padding-left: 0;
+    }
+    
+    #footer-main p{
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 600;
+    }
